@@ -7,26 +7,28 @@
     <body>
        
        <section class="container">
-        <form class="form">
+        <form action="" method="post">
            <fieldset>
             <legend>Shopping<legend>
                 <label>
                 <br> 
-                <input type="checkbox" name="opcao1" value="1.00">RICE  R$ 1,00 
+                <input id="rice" type="checkbox" name="opcao1{}" value="1.00">RICE  R$ 1,00 
                 <br>
-                <input type="checkbox" name="opcao2" value="12.00"> BEAN R$12.00
+                <input id="bean" type="checkbox" name="opcao2{}" value="12.00"> BEAN R$12.00
                 <br>
-                <input type="checkbox" name="opcao3" value="0.50"> Chocolate R$0,50
+                <input id="Chocolate" type="checkbox" name="opcao3{}" value="0.50"> Chocolate R$0,50
                 <br>
-                <input type="checkbox" name="opcao4" value="100.00"> PSN CARD R$100,00
+                <input id="psn" type="checkbox" name="opcao4" value="100.00"> PSN CARD R$100,00
                 <br>
                 </label>
             
-              <button>BUY</button>
+              <input type="hidden" name="acao" value="buy"/>
+              <input type="submit" value="buy"/>
             </fieldset>
             </form>
           
            </section>    
-      
+           
+     
     </body>
 </html>
